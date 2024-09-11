@@ -2,7 +2,9 @@ name: First Workflow
 
 on:
   workflow_dispatch:
-
+  issues:
+    types: [opened]
+    
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -15,6 +17,7 @@ jobs:
         run: echo "Step 2 complete!"
 
   job2:
+    needs: job1
     runs-on: ubuntu-latest
 
     steps:
