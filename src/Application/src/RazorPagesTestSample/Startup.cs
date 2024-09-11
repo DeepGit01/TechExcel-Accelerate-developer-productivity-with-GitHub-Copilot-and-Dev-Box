@@ -11,6 +11,7 @@ namespace RazorPagesTestSample
     {
         public void ConfigureServices(IServiceCollection services)
         {
+            //add comment to trigger workflow
             services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("InMemoryDb"));
 
             services.AddRazorPages();
