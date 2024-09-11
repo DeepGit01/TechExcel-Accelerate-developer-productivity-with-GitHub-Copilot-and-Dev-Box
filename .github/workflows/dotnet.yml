@@ -17,6 +17,13 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    env:
+      # Define your environment variables here
+      registryName: v4i27qdighim4mpnpreg.azurecr.io
+      repositoryName: techexcel/dotnetcoreapp
+      dockerFolderPath: /src/Application/src/RazorPagesTestSample
+      tag: github.run_number
+      
     steps:
     - uses: actions/checkout@v3
     - name: Setup .NET
