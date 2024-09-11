@@ -19,6 +19,7 @@ namespace RazorPagesTestSample
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            //added another comment to trigger the workflow and push the docker image
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
